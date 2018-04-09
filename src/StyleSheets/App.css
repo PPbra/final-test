@@ -1,7 +1,7 @@
 .header {
   background-color: red;
   text-align: center;
-  padding: 15px;
+  padding: 15px ;
 }
 
 .header h1 {
@@ -44,6 +44,8 @@
 }
 .list{
   padding: 0px 0px 0px 0px;
+    height: auto;
+    margin: 0px;
 
 }
 .list li .close {
@@ -94,19 +96,10 @@
   border: none;
 }
 
-.navBar{
 
-
-    list-style: none;
-    font-size: 25px;
-    background: #eeeeee;
-    position: relative;
-    padding: 10px 10px 10px 0px;
-    margin: 0px 0px 0px 0px;
-}
 
 #home{
-    background: #eeeeee;
+    color: white;
     text-align: center;
     text-decoration: none;
     margin: 0px 0px 0px;
@@ -115,7 +108,7 @@
 
 #login{
 
-    background: #eeeeee;
+    color: white;
     text-align: center;
     text-decoration: none;
     margin: 0px 0px 0px;
@@ -124,20 +117,19 @@
 
 #register{
 
+    color: white;
     text-align: center;
     text-decoration: none;
     margin: 0px 0px 0px;
     padding: 10px 10px 10px 10px;
-    background: #eeeeee;
 }
 
 #logout{
-
+    color: white;
     text-align: center;
     text-decoration: none;
     margin: 0px 0px 0px;
     padding: 10px 10px 10px 10px;
-    background: #eeeeee;
     border: none;
 }
 
@@ -258,5 +250,38 @@ input[type="submit"]:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+#navbar {
+    position: relative;
+    list-style: none;
+    padding: 10px 10px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    width:auto ;
+    height: auto;
+    background: #16a085;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#suggest{
+
+    white-space: nowrap;
+    color: blueviolet;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+
+}
 
 
+
+/*.navBar{
+
+
+    list-style: none;
+    font-size: 25px;
+    background: #eeeeee;
+    position: relative;
+    padding: 10px 10px 10px 0px;
+    margin: 0px 0px 0px 0px;
+}*/

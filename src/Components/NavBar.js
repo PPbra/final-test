@@ -21,12 +21,15 @@ class NavBar extends  React.Component {
         const logout = !auth ? null:<Link id={'logout'} to={'/logout'}>Logout</Link>;
 
         return (
-            <li className={"navBar"}>
-                {home}
-                {login}
-                {register}
-                {logout}
-            </li>
+            <div id={"navbar"}>
+                <li className={"navBar"}>
+                    {home}
+                    {login}
+                    {register}
+                    {logout}
+                </li>
+            </div>
+
         )
     }
 

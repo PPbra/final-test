@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Redirect from "react-router-dom/es/Redirect";
 import {loginAPI} from "../Services/APIServices";
 import {getTokenFromStorage, saveTokenToStorage} from "../Services/LocalStorageServices";
-
+import {Link} from "react-router-dom";
 
 
 class LoginPage extends React.Component {
@@ -70,6 +70,10 @@ class LoginPage extends React.Component {
                         <input type={"text"} placeholder={"email"}  id={'loginEmail'}/>
                         <input type={"password"} placeholder={'password'} id={'loginPassword'}/>
                         <input type="submit" name="login_submit" value={"Log In"} onClick={this.loginNow}/>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <Link id={"suggest"} to={"/register"}>You don't have account?Sing up now!</Link>
                     </form>
                 </div>
 
