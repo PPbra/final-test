@@ -62,15 +62,17 @@ class LoginPage extends React.Component {
         }
         else{
             return(
-                <div>
-                    <form>
+                <div id={"login-box"}>
+
+                    <form className={"loginForm"}>
+
+                        <h1 id={"loginh1"}>Log In</h1>
                         <input type={"text"} placeholder={"email"}  id={'loginEmail'}/>
-                        <br/>
                         <input type={"password"} placeholder={'password'} id={'loginPassword'}/>
-                        <br/>
-                        <button onClick={this.loginNow} id={'loginNow'}>Login now!</button>
+                        <input type="submit" name="login_submit" value={"Log In"} onClick={this.loginNow}/>
                     </form>
                 </div>
+
             );
         }
 

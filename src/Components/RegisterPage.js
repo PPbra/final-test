@@ -8,7 +8,9 @@ class RegisterPage extends React.Component {
         isRegister: false,
     };
 
-    registerIt = () => {
+    registerIt = (e) => {
+
+        e.preventDefault();
 
         const email = document.getElementById('email').value;
         const name = document.getElementById('name').value;
@@ -24,6 +26,7 @@ class RegisterPage extends React.Component {
         else {
             register({email, password, name})
                 .then(response => {
+                    console.log("hakjsdh");
                     this.setState({
                         isRegister: true,
                     });
@@ -46,7 +49,30 @@ class RegisterPage extends React.Component {
 
 
             return(
-                <form>
+
+
+                <div id="register-box">
+                    <form className="registerForm">
+                        <h1 id={"singuph1"}>Sign up</h1>
+
+                        <input type="text" name="username" placeholder="Username" id={"name"} />
+                        <input type="text" name="email" placeholder="E-mail" id={"email"}/>
+                        <input type="password" name="password" placeholder="Password" id={"password"}/>
+                        <input type="password" name="password2" placeholder="Retype password"  id={"repassword"}/>
+                        <input type="submit" name="signup_submit" value="Sign me up" onClick={this.registerIt}/>
+                    </form>
+                </div>
+
+
+            );
+        }
+
+    }
+
+
+}
+
+{/*<form>
                     <input placeholder={'name'} type={'word'} id={'name'}/>
                     <br/>
                     <input placeholder={'email'} type={'word'} id={'email'}/>
@@ -56,15 +82,7 @@ class RegisterPage extends React.Component {
                     <input placeholder={'rewrite password'} type={'password'} id={'repassword'}/>
                     <br/>
                     <button type={'button'} onClick={this.registerIt}>Register!</button>
-                </form>
-
-            );
-        }
-
-    }
-
-
-}
+                </form>*/}
 
 
 export default RegisterPage;

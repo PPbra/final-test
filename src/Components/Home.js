@@ -85,7 +85,7 @@ class Home extends  React.Component{
         if(isLogin){
 
             return(
-                <div>
+                <div id={"home-box"}>
 
                     <Header clickAdd={this.handleAddTodo}/>
                     <ul className={"list"}>

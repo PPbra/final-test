@@ -111,6 +111,7 @@ export const register = ({email , password , name}) =>{
         headers: {
             'Content-Type':'application/json'
         },
+
         body : JSON.stringify({
 
             email,
@@ -122,7 +123,6 @@ export const register = ({email , password , name}) =>{
 
     return fetch(request)
         .then(response =>{
-
             return response.json();
         })
 
