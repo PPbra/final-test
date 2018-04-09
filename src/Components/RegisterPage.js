@@ -26,11 +26,19 @@ class RegisterPage extends React.Component {
         else {
             register({email, password, name})
                 .then(response => {
-                    console.log("hakjsdh");
-                    this.setState({
-                        isRegister: true,
-                    });
-                });
+                        this.setState({
+                            isRegister: true,
+                        });
+                    }
+                )
+
+                .catch(response =>{
+
+                    window.alert("Something wrong , type again! ");
+                })
+
+
+
         }
 
     };
@@ -71,18 +79,6 @@ class RegisterPage extends React.Component {
 
 
 }
-
-{/*<form>
-                    <input placeholder={'name'} type={'word'} id={'name'}/>
-                    <br/>
-                    <input placeholder={'email'} type={'word'} id={'email'}/>
-                    <br/>
-                    <input placeholder={'password'} type={'password'} id={'password'}/>
-                    <br/>
-                    <input placeholder={'rewrite password'} type={'password'} id={'repassword'}/>
-                    <br/>
-                    <button type={'button'} onClick={this.registerIt}>Register!</button>
-                </form>*/}
 
 
 export default RegisterPage;

@@ -6,7 +6,6 @@ import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import NavBar from "./NavBar";
 import LogoutPage from "./LogoutPage";
-import {getTokenFromStorage} from "../Services/LocalStorageServices";
 
 
 class App extends  React.Component{

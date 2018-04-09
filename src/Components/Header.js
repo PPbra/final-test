@@ -7,7 +7,6 @@ class Header extends React.Component{
 
     render(){
 
-        //const input = document.getElementById("input").value;
 
         return (
 
